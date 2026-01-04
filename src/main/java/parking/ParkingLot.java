@@ -50,12 +50,15 @@ public class ParkingLot {
         }
         return null;
     }
-    public int findFirstAvailableSpot() {
+    public int findNearestAvailableSpot() {
         for (ParkingSpot spot : spots) {
             if (!spot.isOccupied()) {
-                return spot.getId();
+                return spot.getId(); // nearest = lowest ID
             }
         }
         return -1; // none available
+    }
+    public int findFirstAvailableSpot() {
+        return findNearestAvailableSpot();
     }
 }

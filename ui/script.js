@@ -47,5 +47,16 @@ document.getElementById("resetBtn")?.addEventListener("click", () => {
 
     updateCounts();
 });
+// nearest available = lowest spot number that is green
+let nearest = null;
+document.querySelectorAll(".spot").forEach((btn) => {
+    if (!btn.classList.contains("available")) return;
+    const id = Number(btn.dataset.spotId);
+    if (nearest === null || id < nearest) nearest = id;
+});
 
+const nearestEl = document.getElementById("nearestSpot");
+if (nearestEl) {
+    nearestEl.textContent = nearest === null ? "None" : `Spot ${nearest}`;
+}
 updateCounts();
