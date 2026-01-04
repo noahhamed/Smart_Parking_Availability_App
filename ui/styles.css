@@ -1,0 +1,29 @@
+.spot {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.05s ease, filter 0.15s ease;
+}
+
+.spot:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+}
+
+.spot:active {
+    transform: translateY(0px);
+    filter: brightness(0.98);
+}
+
+.available {
+    background-color: #198754;
+}
+
+.occupied {
+    background-color: #dc3545;
+}

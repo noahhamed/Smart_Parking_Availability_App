@@ -50,4 +50,12 @@ public class ParkingLot {
         }
         return null;
     }
+    public int findFirstAvailableSpot() {
+        for (ParkingSpot spot : spots) {
+            if (!spot.isOccupied()) {
+                return spot.getId();
+            }
+        }
+        return -1; // none available
+    }
 }

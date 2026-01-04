@@ -47,4 +47,18 @@ public class ParkingLotTest {
         assertFalse(lot.exitVehicle(99));
         assertEquals(2, lot.getAvailableCount());
     }
+    @Test
+    void findFirstAvailableReturnsFirstFreeSpot() {
+        ParkingLot lot = new ParkingLot(3);
+        lot.enterVehicle(1); // occupy 1
+        assertEquals(2, lot.findFirstAvailableSpot());
+    }
+
+    @Test
+    void findFirstAvailableReturnsMinusOneWhenFull() {
+        ParkingLot lot = new ParkingLot(2);
+        lot.enterVehicle(1);
+        lot.enterVehicle(2);
+        assertEquals(-1, lot.findFirstAvailableSpot());
+    }
 }
