@@ -24,7 +24,7 @@ The project focuses on backend logic in Java, unit testing, and interactive user
 - JUnit
 - HTML, CSS, Bootstrap
 - JavaScript
-- Git & GitHub
+- GitHub
 
 ## How to Run
 
