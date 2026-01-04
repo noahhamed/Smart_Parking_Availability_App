@@ -12,6 +12,9 @@ The project focuses on backend logic in Java, unit testing, and interactive user
 - Unit tests using JUnit to verify state transitions and availability logic
 
 ## Screenshots
+<img width="1357" height="563" alt="image" src="https://github.com/user-attachments/assets/f0bb4a4a-a836-4c50-b150-8e3132116c51" />
+<img width="1363" height="573" alt="image" src="https://github.com/user-attachments/assets/88933998-8721-446d-bd50-4b85b24eb5e6" />
+
 
 
 ## Tech Stack
